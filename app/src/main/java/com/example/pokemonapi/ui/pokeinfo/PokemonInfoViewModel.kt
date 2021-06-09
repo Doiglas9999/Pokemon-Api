@@ -1,5 +1,7 @@
 package com.example.pokemonapi.ui.pokeinfo
 
+import android.content.Context
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.pokemonapi.model.api.Pokemon
@@ -32,6 +34,7 @@ class PokemonInfoViewModel : ViewModel() {
 
             override fun onFailure(call: Call<Pokemon>, t: Throwable) {
                 call.cancel()
+
             }
 
         })
